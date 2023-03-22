@@ -1,0 +1,294 @@
+.action .swiper {
+    &-slide {
+        overflow: hidden;
+
+        &-wrapper {
+            position: relative;
+        }
+        
+        &-particles {
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            &-wrapper {
+                position: relative;
+            }
+            
+            img {
+                position: absolute;
+            }
+        }
+        
+        .particle {
+            position: absolute;
+
+            &.flower {
+                top: 25px;
+                left: -60px;
+                z-index: -3;
+            }
+
+            &.rainbow {
+                top: 0;
+                right: 0;
+            }
+            
+            &.lightning {
+                top: 17%;
+                left: 54%;
+            }
+
+            &.tape {
+                bottom: 17%;
+                left: 55%;
+            }
+
+            &.mouth-s3 {
+                top: 17%;
+                left: 50%;
+            }
+
+            &.plane {
+                left: 0;
+                bottom: 12%;
+            }
+
+            &.seashell {
+                top: 15%;
+                left: 54%;
+            }
+
+            &.whale {
+                bottom: 22%;
+                left: 34%;
+            }
+
+            &.moon {
+                top: -20px;
+                left: -60px;
+                z-index: -3;
+            }
+        }
+
+        &.slide-1 {
+            .swiper-slide-particles {
+                img {
+                    &.chair {
+                        z-index: 10;
+                        top: -200px;
+                        right: -300px;
+                    }
+    
+                    &.mouth {
+                        z-index: 11;
+                        top: -150px;
+                    }
+    
+                    &.glasses {
+                        z-index: 12;
+                        top: -300px;
+                    }
+                }
+            }
+        }
+
+        &.slide-2 {
+            .swiper-slide-particles {
+                img {
+                    &.cat {
+                        z-index: 10;
+                        top: -320px;
+                        right: -290px;
+                    }
+                }
+            }
+        }
+
+        &.slide-3 {
+            .swiper-slide-particles {
+                img {
+                    &.flamingo {
+                        z-index: 10;
+                        top: -260px;
+                        right: -330px;
+                    }
+                }
+            }
+        }
+
+        &.slide-4 {
+            .swiper-slide-particles {
+                img {
+                    &.phone {
+                        width: 650px;
+                        z-index: 10;
+                        top: -199px;
+                        right: -375px;
+                    }
+                }
+            }
+        }
+
+        &.slide-5 {
+            .swiper-slide-particles {
+                img {
+                    &.babyandhand {
+                        z-index: 10;
+                        top: -260px;
+                        right: -330px;
+                    }
+                }
+            }
+        }
+        
+        &.slide-6 {
+            .swiper-slide-particles {
+                img {
+                    &.guse {
+                        z-index: 10;
+                        top: -260px;
+                        right: -330px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .action .swiper {
+        &-slide {
+            &-wrapper {
+                .particle {
+                    height: auto;
+
+                    &.flower {
+                        width: 250px;
+                    }
+                    
+                    &.rainbow {
+                        width: 150px;
+                    }
+                    
+                    &.lightning {
+                        width: 90px;
+                        top: 2%;
+                        left: 55%;
+                    }
+
+                    &.tape {
+                        left: 57%;
+                    }
+
+                    &.mouth-s3 {
+                        width: 200px;
+                        top: 10%;
+                    }
+
+                    &.plane {
+                        bottom: 10%;
+                    }
+
+                    &.moon {
+                        width: 250px;
+                    }
+
+                    &.whale {
+                        width: 300px;
+                        bottom: 15%;
+                        left: 40%;
+                    }
+
+                    &.seashell {
+                        width: 130px;
+                        top: 13%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1320px) {
+    .action .swiper {
+        &-slide {
+            &-wrapper {
+                .particle {
+                    height: auto;
+
+                    &.tape {
+                        display: none;
+                    }
+
+                    &.mouth-s3 {
+                        display: none;
+                    }
+                }
+            }
+            
+            .swiper-slide-particles {
+                &-wrapper {
+                    transform: scale(.6);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .action .swiper {
+        &-slide {
+            &-wrapper {
+                .particle {
+                    &.lightning {
+                        display: none;
+                    }
+
+                    &.plane {
+                        display: none;
+                    }
+
+                    &.moon {
+                        width: 170px;
+                    }
+
+                    &.seashell {
+                        display: none;
+                    }
+
+                    &.whale {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .action .swiper {
+        &-slide {
+            .swiper-slide-particles {
+                &-wrapper {
+                    transform: scale(.5) translateX(0px) translateY(100px);
+                }
+            }
+        }
+    }
+}
+
+// @media (max-width: 890px) {
+//     .action .swiper {
+//         &-slide {
+//             &-particles {
+//                 display: none;
+//             }
+//         }
+//     }
+// }
