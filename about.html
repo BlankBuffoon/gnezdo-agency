@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Об агентстве</title>
+
+</head>
+<body>
+
+    <header class="header about">
+    <div class="main-container">
+        <nav class="header__nav">
+            <div class="header__nav--left">
+                <a href="/">
+                    <img src="img/Gnezdo-Agency-logo.png" alt="logo">
+                    <p class="logofont">gnezdoagency</p>
+                </a>
+            </div>
+            <div class="header__nav--right">
+                <div class="header__nav--links">
+                    <button class="header__form-btn">Привет, Москва!</button>
+                    <button class="header__form-btn">Пообщаемся, стамбул!</button>
+                </div>
+                <div class="header__nav--btns">
+                    <div class="header__nav-langselection">
+                        <button data-duplicated='true' class="header__button--lang">RU</button>
+                        <div class="hidden">
+                            <button data-duplicated='true' class="header__button--lang">EN</button>
+                            <button data-duplicated='true' class="header__button--lang">TR</button>
+                        </div>
+                    </div>
+                    <button data-duplicated='true' class="header__button--burger">
+                        <img class="open active" src="img/burger-btn.png" alt="#">
+                        <img class="close" src="img/burger-close-btn.png" alt="#">
+                    </button>
+                </div>
+            </div>
+            <nav class="header__burger">
+                <ul>
+                    <li>
+                        <a class="menu-item" href="#"><span>Об агентстве</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Об агентстве</nobr></span><img src="img/menu/about-1.png" alt="#"><span><nobr>Об агентстве</nobr></span><img src="img/menu/about-2.png" alt="#">
+                                <span><nobr>Об агентстве</nobr></span><img src="img/menu/about-1.png" alt="#"><span><nobr>Об агентстве</nobr></span><img src="img/menu/about-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="#"><span>Философия</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Философия</nobr></span><img src="img/menu/filosofy-1.png" alt="#"><span><nobr>Философия</nobr></span><img src="img/menu/filosofy-2.png" alt="#">
+                                <span><nobr>Философия</nobr></span><img src="img/menu/filosofy-1.png" alt="#"><span><nobr>Философия</nobr></span><img src="img/menu/filosofy-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="#"><span>Услуги</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Услуги</nobr></span><img src="img/menu/service-1.png" alt="#"><span><nobr>Услуги</nobr></span><img src="img/menu/service-2.png" alt="#">
+                                <span><nobr>Услуги</nobr></span><img src="img/menu/service-1.png" alt="#"><span><nobr>Услуги</nobr></span><img src="img/menu/service-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="#"><span>Портфолио</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Портфолио</nobr></span><img src="img/menu/portfolio-1.png" alt="#"><span><nobr>Портфолио</nobr></span><img src="img/menu/portfolio-2.png" alt="#">
+                                <span><nobr>Портфолио</nobr></span><img src="img/menu/portfolio-1.png" alt="#"><span><nobr>Портфолио</nobr></span><img src="img/menu/portfolio-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="#"><span>Клиенты</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Клиенты</nobr></span><img src="img/menu/clients-1.png" alt="#"><span><nobr>Клиенты</nobr></span><img src="img/menu/clients-2.png" alt="#">
+                                <span><nobr>Клиенты</nobr></span><img src="img/menu/clients-1.png" alt="#"><span><nobr>Клиенты</nobr></span><img src="img/menu/clients-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="#"><span>Контакты</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Контакты</nobr></span><img src="img/menu/contacts-1.png" alt="#"><span><nobr>Контакты</nobr></span><img src="img/menu/contacts-2.png" alt="#">
+                                <span><nobr>Контакты</nobr></span><img src="img/menu/contacts-1.png" alt="#"><span><nobr>Контакты</nobr></span><img src="img/menu/contacts-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+        <div class="header__form">
+            <form action="#">
+                <input class="headerform-name" name="headerform-name" type="text" placeholder="Имя"><br>
+                <input class="headerform-email" name="headerform-email" type="email" placeholder="Email"><br>
+                <input class="headerform-phonenumber" name="headerform-phonenumber" type="tel" placeholder="Телефон"><br>   
+                <textarea class="headerform-description" name="headerform-description" id="" cols="30" rows="10" placeholder="Опишите ваш проект"></textarea><br>
+                <h3>Что мы можем для вас сделать?</h3>
+                <div class="header__form-selection">
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-research" id="headerform-research">
+                        <label for="headerform-research">Исследования</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-strategy" id="headerform-strategy">
+                        <label for="headerform-strategy">Стратегия</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-branding" id="headerform-branding">
+                        <label for="headerform-branding">Брендинг</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-digital" id="headerform-digital">
+                        <label for="headerform-digital">Диджитал</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-creative" id="headerform-creative">
+                        <label for="headerform-creative">Креатив</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-media" id="headerform-media">
+                        <label for="headerform-media">Медиа</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-identics" id="headerform-identics">
+                        <label for="headerform-identics">Айдентика</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-production" id="headerform-production">
+                        <label for="headerform-production">Продакшн</label>
+                    </div>
+                </div>
+                <button type="submit">Отправить *</button>
+                <p>* Отправляя форму вы соглашаетесь с нашей <a href="#">политикой конфиденциальности данных</a></p>
+            </form>
+            <button class="header__form-btn-close">×</button>
+        </div>
+    </div>
+   <div class="header__bg">
+        <div class="intro-paralax intro-paralax-layer-6"></div>
+        <div class="intro-paralax intro-paralax-layer-5"></div>
+        <div class="intro-paralax intro-paralax-layer-4"></div>
+        <div class="intro-paralax intro-paralax-layer-3"></div>
+        <div class="intro-paralax intro-paralax-layer-2"></div>
+        <div class="intro-paralax intro-paralax-layer-1"></div>
+        <div class="intro-paralax-bg"></div>
+   </div>
+</header>
+
+    <main>
+
+        <section class="introdusing">
+            <div class="main-container">
+                <h2>ТО, ЧТО БЫЛО ВЧЕРА <span>- ЭТО ОПЫТ.</span><br>ТО, ЧТО БУДЕТ ЗАВТРА <span> – МЫ УЖЕ ДЕЛАЕМ.</span></h2>    
+            </div>
+            <div class="introdusing__marquee-wrapper">
+                <div class="introdusing__marquee left" data-duplicated='true'>МАРКЕТИНГОВОЕ АГЕНТСТВО ПОЛНОГО ЦИКЛА. МЫ ПРЕДОСТАВЛЯЕМ КЛИЕНТАМ ЛУЧШИЕ СТРАТЕГИЧЕСКИЕ ПРОДУКТЫ И СЕРВИС. ● МАРКЕТИНГОВОЕ АГЕНТСТВО ПОЛНОГО ЦИКЛА. МЫ ПРЕДОСТАВЛЯЕМ КЛИЕНТАМ ЛУЧШИЕ СТРАТЕГИЧЕСКИЕ ПРОДУКТЫ И СЕРВИС. ● </div>
+                <div class="introdusing__marquee right" data-duplicated='true'>МАРКЕТИНГОВОЕ АГЕНТСТВО ПОЛНОГО ЦИКЛА. МЫ ПРЕДОСТАВЛЯЕМ КЛИЕНТАМ ЛУЧШИЕ СТРАТЕГИЧЕСКИЕ ПРОДУКТЫ И СЕРВИС. ● МАРКЕТИНГОВОЕ АГЕНТСТВО ПОЛНОГО ЦИКЛА. МЫ ПРЕДОСТАВЛЯЕМ КЛИЕНТАМ ЛУЧШИЕ СТРАТЕГИЧЕСКИЕ ПРОДУКТЫ И СЕРВИС. ● </div>
+            </div>
+            <div class="main-container">
+                <div class="introdusing__cards">
+                    <div class="introdusing__card card1">
+                        <div class="introdusing__card-content">
+                            <img src="img/about/together.png" alt="#">
+                            <h4>Премия #мывместе. Номинант</h4>
+                            <p>Категория «Бизнес», номинация «Медиапроект»</p>
+                            <p>Категория «Бизнес», номинация «ответственный бизнес»</p>
+                        </div>
+                        <div class="introdusing__card-background top"></div>
+                        <div class="introdusing__card-background bottom"></div>
+                    </div>
+                    <div class="introdusing__card card2">
+                        <div class="introdusing__card-content">
+                            <img src="img/about/press-service.png" alt="#">
+                            <h4>КОНКУРС «ПРЕСС-СЛУЖБА ГОДА».</h4>
+                            <p>Победитель в номинации «Лучший социальный<br> проект в бизнесе».</p>
+                        </div>
+                        <div class="introdusing__card-background top"></div>
+                        <div class="introdusing__card-background bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback main-container">
+            <h3 class="feedback__heading">Отзывы клиентов</h3>
+            <div class="feedback__swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/feedback/RU-Electronics.png" alt="#">
+                        <div class="content">
+                            <h3>ОЛЕГ ЧУГУЕВЕЦ</h3>
+                            <h4>Директор по развитию компании «Ruelectronics»</h4>
+                            <p>Команда «GnezdoAgency» написала креатив и сняла фильм о компании. Цели и задачи, поставленные перед агентством отработаны. Разумеется, после совместного проекта, мы бы рекомендовали агентство и подразделение Production. Этот проект был грамотной инвестицией в наше развитие на рынке электронных компонентов.</p>
+                            <div class="background"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/feedback/RU-Electronics.png" alt="">
+                        <div class="content">
+                            <h3>ОЛЕГ ЧУГУЕВЕЦ</h3>
+                            <h4>Директор по развитию компании «Ruelectronics»</h4>
+                            <p>Команда «GnezdoAgency» написала креатив и сняла фильм о компании. Цели и задачи, поставленные перед агентством отработаны. Разумеется, после совместного проекта, мы бы рекомендовали агентство и подразделение Production. Этот проект был грамотной инвестицией в наше развитие на рынке электронных компонентов.</p>
+                            <div class="background"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/feedback/RU-Electronics.png" alt="">
+                        <div class="content">
+                            <h3>ОЛЕГ ЧУГУЕВЕЦ</h3>
+                            <h4>Директор по развитию компании «Ruelectronics»</h4>
+                            <p>Команда «GnezdoAgency» написала креатив и сняла фильм о компании. Цели и задачи, поставленные перед агентством отработаны. Разумеется, после совместного проекта, мы бы рекомендовали агентство и подразделение Production. Этот проект был грамотной инвестицией в наше развитие на рынке электронных компонентов.</p>
+                            <div class="background"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/feedback/RU-Electronics.png" alt="">
+                        <div class="content">
+                            <h3>ОЛЕГ ЧУГУЕВЕЦ</h3>
+                            <h4>Директор по развитию компании «Ruelectronics»</h4>
+                            <p>Команда «GnezdoAgency» написала креатив и сняла фильм о компании. Цели и задачи, поставленные перед агентством отработаны. Разумеется, после совместного проекта, мы бы рекомендовали агентство и подразделение Production. Этот проект был грамотной инвестицией в наше развитие на рынке электронных компонентов.</p>
+                            <div class="background"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next">
+                    <img src="img/icons/icons.svg#swiper-right-arrow" class="svg-swiper-right-arrow-dims" alt="swiper-right-arrow">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="img/icons/icons.svg#swiper-left-arrow.svg" class="svg-swiper-left-arrow.svg-dims" alt="swiper-left-arrow.svg">
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="ourteam main-container">
+            <h3>Наша команда</h3>
+            <div class="ourteam__cards">
+                <div class="ourteam__card card-1">
+                    <div class="ourteam__card-image">
+                        <img src="img/ourteam/1.png" alt="#">
+                    </div>
+                    <h4>Фамилия Имя</h4>
+                    <p>Должность</p>
+                </div>
+                <div class="ourteam__card card-2">
+                    <div class="ourteam__card-image">
+                        <img src="img/ourteam/2.png" alt="#">
+                    </div>
+                    <h4>Фамилия Имя</h4>
+                    <p>Должность</p>
+                </div>
+                <div class="ourteam__card card-3">
+                    <div class="ourteam__card-image">
+                        <img src="img/ourteam/3.png" alt="#">
+                    </div>
+                    <h4>Фамилия Имя</h4>
+                    <p>Должность</p>
+                </div>
+                <div class="ourteam__card card-4">
+                    <div class="ourteam__card-image">
+                        <img src="img/ourteam/4.png" alt="#">
+                    </div>
+                    <h4>Фамилия Имя</h4>
+                    <p>Должность</p>
+                </div>
+                <div class="ourteam__card card-5">
+                    <div class="ourteam__card-image">
+                        <img src="img/ourteam/5.png" alt="#">
+                    </div>
+                    <h4>Фамилия Имя</h4>
+                    <p>Должность</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="letstalk">
+    <div class="letstalk__wrapper main-container">
+        <div class="letstalk__form letstalk__card">
+            <div class="letstalk__form-image">
+                <img src="img/letstalk-form-img.png" alt="#">
+            </div>
+            <div class="letstalk__form-wrapper">
+                <h2>Пообщаемся?</h2>
+                <form class="letstalk__form-form" action="#">
+                    <input type="text" name="name" id="lt-name" required placeholder="Введите имя">
+                    <input type="email" name="email" id="lt-email" required placeholder="Введите email">
+                    <textarea name="message" id="lt-message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+                    <button type="submit">отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="letstalk__info moscow letstalk__card">
+            <h3>Москва</h3>
+            <ul>
+                <li>
+                    <img src="img/icons/icons.svg#location" class="svg-location-dims" alt="location">
+                    <p>Москва 2-й Павелецкий пр-д, 5, стр. 1, БЦ Ривердейл, офис 419</p>
+                </li>
+                <li>
+                    <img src="img/icons/icons.svg#phone" class="svg-phone-dims" alt="phone">
+                    <p><a href="tel:+74957409026">+7 (495) 740 90 26</a></p>
+                </li>
+                <li>
+                    <img src="img/icons/icons.svg#mail" class="svg-mail-dims" alt="mail">
+                    <p><a href="mailto:info@gnezdo-pro.tv">info@gnezdo-pro.tv</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="letstalk__info istanbul letstalk__card">
+            <h3>Istanbul</h3>
+            <ul>
+                <li>
+                    <img src="img/icons/icons.svg#location" class="svg-location-dims" alt="location">
+                    <p>Esentepe Mah, Keskin Kalem Sokağı NO:17/2, 34394 İstanbul</p>
+                </li>
+                <li>
+                    <img src="img/icons/icons.svg#phone" class="svg-phone-dims" alt="phone">
+                    <p><a href="tel:+79262197717">+7 (926) 219 77 17</a></p>
+                </li>
+                <li>
+                    <img src="img/icons/icons.svg#mail" class="svg-mail-dims" alt="mail">
+                    <p><a href="mailto:info@gnezdo-pro.tv">info@gnezdo-pro.tv</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="main-container">
+        <div class="footer__wrapper">
+            <p class="copy">2015 - 2022 GNEZDO AGENCY</p>
+            <p class="politics">Политика конфиденциальности</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script defer src="js/app.min.js"></script>
+</body>
+</html>

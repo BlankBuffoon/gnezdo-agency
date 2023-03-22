@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gnezdo.agency</title>
+
+</head>
+<body>
+    <header class="header main">
+    <div class="main-container">
+        <nav class="header__nav">
+            <div class="header__nav--left">
+                <a href="/">
+                    <img src="img/Gnezdo-Agency-logo.png" alt="logo">
+                    <p class="logofont">gnezdoagency</p>
+                </a>
+            </div>
+            <div class="header__nav--right">
+                <div class="header__nav--links">
+                    <button class="header__form-btn">Привет, Москва!</button>
+                    <button class="header__form-btn">Пообщаемся, стамбул!</button>
+                </div>
+                <div class="header__nav--btns">
+                    <div class="header__nav-langselection">
+                        <button data-duplicated='true' class="header__button--lang">RU</button>
+                        <div class="hidden">
+                            <button data-duplicated='true' class="header__button--lang">EN</button>
+                            <button data-duplicated='true' class="header__button--lang">TR</button>
+                        </div>
+                    </div>
+                    <button data-duplicated='true' class="header__button--burger">
+                        <img class="open active" src="img/burger-btn.png" alt="#">
+                        <img class="close" src="img/burger-close-btn.png" alt="#">
+                    </button>
+                </div>
+            </div>
+            <nav class="header__burger">
+                <ul>
+                    <li>
+                        <a class="menu-item" href="#"><span>Об агентстве</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Об агентстве</nobr></span><img src="img/menu/about-1.png" alt="#"><span><nobr>Об агентстве</nobr></span><img src="img/menu/about-2.png" alt="#">
+                                <span><nobr>Об агентстве</nobr></span><img src="img/menu/about-1.png" alt="#"><span><nobr>Об агентстве</nobr></span><img src="img/menu/about-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="#"><span>Философия</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Философия</nobr></span><img src="img/menu/filosofy-1.png" alt="#"><span><nobr>Философия</nobr></span><img src="img/menu/filosofy-2.png" alt="#">
+                                <span><nobr>Философия</nobr></span><img src="img/menu/filosofy-1.png" alt="#"><span><nobr>Философия</nobr></span><img src="img/menu/filosofy-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="#"><span>Услуги</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Услуги</nobr></span><img src="img/menu/service-1.png" alt="#"><span><nobr>Услуги</nobr></span><img src="img/menu/service-2.png" alt="#">
+                                <span><nobr>Услуги</nobr></span><img src="img/menu/service-1.png" alt="#"><span><nobr>Услуги</nobr></span><img src="img/menu/service-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="#"><span>Портфолио</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Портфолио</nobr></span><img src="img/menu/portfolio-1.png" alt="#"><span><nobr>Портфолио</nobr></span><img src="img/menu/portfolio-2.png" alt="#">
+                                <span><nobr>Портфолио</nobr></span><img src="img/menu/portfolio-1.png" alt="#"><span><nobr>Портфолио</nobr></span><img src="img/menu/portfolio-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="#"><span>Клиенты</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Клиенты</nobr></span><img src="img/menu/clients-1.png" alt="#"><span><nobr>Клиенты</nobr></span><img src="img/menu/clients-2.png" alt="#">
+                                <span><nobr>Клиенты</nobr></span><img src="img/menu/clients-1.png" alt="#"><span><nobr>Клиенты</nobr></span><img src="img/menu/clients-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="#"><span>Контакты</span></a>
+                        <a href="#">
+                            <div class="menu-item marquee">
+                                <span><nobr>Контакты</nobr></span><img src="img/menu/contacts-1.png" alt="#"><span><nobr>Контакты</nobr></span><img src="img/menu/contacts-2.png" alt="#">
+                                <span><nobr>Контакты</nobr></span><img src="img/menu/contacts-1.png" alt="#"><span><nobr>Контакты</nobr></span><img src="img/menu/contacts-2.png" alt="#">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+        <div class="header__content">
+            <div class="header__content--card">
+                <h1>Международное маркетинговое агентство</h1>
+                <img src="img/header-gnezdo-plate.png" alt="gnezdoagency">
+            </div>
+        </div>
+        <div class="header__form">
+            <form action="#">
+                <input class="headerform-name" name="headerform-name" type="text" placeholder="Имя"><br>
+                <input class="headerform-email" name="headerform-email" type="email" placeholder="Email"><br>
+                <input class="headerform-phonenumber" name="headerform-phonenumber" type="tel" placeholder="Телефон"><br>   
+                <textarea class="headerform-description" name="headerform-description" id="" cols="30" rows="10" placeholder="Опишите ваш проект"></textarea><br>
+                <h3>Что мы можем для вас сделать?</h3>
+                <div class="header__form-selection">
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-research" id="headerform-research">
+                        <label for="headerform-research">Исследования</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-strategy" id="headerform-strategy">
+                        <label for="headerform-strategy">Стратегия</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-branding" id="headerform-branding">
+                        <label for="headerform-branding">Брендинг</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-digital" id="headerform-digital">
+                        <label for="headerform-digital">Диджитал</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-creative" id="headerform-creative">
+                        <label for="headerform-creative">Креатив</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-media" id="headerform-media">
+                        <label for="headerform-media">Медиа</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-identics" id="headerform-identics">
+                        <label for="headerform-identics">Айдентика</label>
+                    </div>
+                    <div>
+                        <input class="header__form-checkbox" type="checkbox" name="headerform-production" id="headerform-production">
+                        <label for="headerform-production">Продакшн</label>
+                    </div>
+                </div>
+                <button type="submit">Отправить *</button>
+                <p>* Отправляя форму вы соглашаетесь с нашей <a href="#">политикой конфиденциальности данных</a></p>
+            </form>
+            <button class="header__form-btn-close">×</button>
+        </div>
+    </div>
+    <video class="header__videobg" autoplay muted loop poster="img/header-poster.png">
+        <source src="files/introvideo.mp4" type="video/mp4">
+    </video>
+</header>
+
+    <main>
+        <section class="action swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-1">
+                    <div class="swiper-slide-wrapper main-container">
+                        <div class="content">
+                            <h3>Как насчет того,<br> чтобы заполнить<br> наш бриф?</h3>
+                            <a href="#">Заполнить бриф</a>
+                            <div class="background-card top"></div>
+                            <div class="background-card bottom"></div>
+                        </div>
+                        <div class="swiper-slide-particles">
+                            <div class="swiper-slide-particles-wrapper">
+                                <img class="glasses" src="img/actionslider/slide-1/glasses.png" alt="#">
+                                <img class="mouth" src="img/actionslider/slide-1/mouth.png" alt="#">
+                                <img class="chair" src="img/actionslider/slide-1/chair.png" alt="#">
+                            </div>
+                        </div>
+                        <img class="particle flower" src="img/actionslider/slide-1/flower.png" alt="#">
+                        <img class="particle rainbow" src="img/actionslider/slide-1/rainbow.png" alt="#">
+                        <img class="particle lightning" src="img/actionslider/slide-1/lightning.png" alt="#">
+                    </div>
+                    <div class="swiper-slide-bg"></div>
+                </div>
+                <div class="swiper-slide slide-2">
+                    <div class="swiper-slide-wrapper main-container">
+                        <div class="content">
+                            <h3>Зачем<br> ты здесь?</h3>
+                            <a href="#">Об агентстве</a>
+                            <div class="background-card top"></div>
+                            <div class="background-card bottom"></div>
+                        </div>
+                        <div class="swiper-slide-particles">
+                            <div class="swiper-slide-particles-wrapper">
+                                <img class="cat" src="img/actionslider/slide-2/cat.png" alt="#">
+                            </div>
+                        </div>
+                        <img class="particle tape" src="img/actionslider/slide-2/tape.png" alt="#">
+                    </div>                    
+                    <div class="swiper-slide-bg"></div>
+                </div>
+                <div class="swiper-slide slide-3">
+                    <div class="swiper-slide-wrapper main-container">
+                        <div class="content">
+                            <h3>Мы есть<br> интегрированный<br> сервис и модель<br> полного цикла</h3>
+                            <div class="background-card top"></div>
+                            <div class="background-card bottom"></div>
+                        </div>
+                        <div class="swiper-slide-particles">
+                            <div class="swiper-slide-particles-wrapper">
+                                <img class="flamingo" src="img/actionslider/slide-3/flamingo.png" alt="#">
+                            </div>
+                        </div>
+                        <img class="particle mouth-s3" src="img/actionslider/slide-3/mouth.png" alt="#">
+                        <img class="particle plane" src="img/actionslider/slide-3/plane.png" alt="#">
+                    </div>                    
+                    <div class="swiper-slide-bg"></div>
+                </div>
+                <div class="swiper-slide slide-4">
+                    <div class="swiper-slide-wrapper main-container">
+                        <div class="content">
+                            <h3>Свяжитесь с нами<br> это хороший<br> старт!</h3>
+                            <a href="#">Об агентстве</a>
+                            <div class="background-card top"></div>
+                            <div class="background-card bottom"></div>
+                        </div>
+                        <div class="swiper-slide-particles">
+                            <div class="swiper-slide-particles-wrapper">
+                                <img class="phone" src="img/actionslider/slide-4/phone.png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide-bg"></div>
+                </div>
+                <div class="swiper-slide slide-5">
+                    <div class="swiper-slide-wrapper main-container">
+                        <div class="content">
+                            <h3>Мы - за коллаборацию<br> с клиентом<br> и экологичные<br> коммуникации</h3>
+                            <a href="#">Заполнить бриф</a>
+                            <div class="background-card top"></div>
+                            <div class="background-card bottom"></div>
+                        </div>
+                        <div class="swiper-slide-particles">
+                            <div class="swiper-slide-particles-wrapper">
+                                <img class="babyandhand" src="img/actionslider/slide-5/babyandhand.png" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide-bg"></div>
+                </div>
+                <div class="swiper-slide slide-6">
+                    <div class="swiper-slide-wrapper main-container">
+                        <div class="content">
+                            <h3>Наблюдай с нами<br> за ростом продаж</h3>
+                            <a href="#">Об агентстве</a>
+                            <div class="background-card top"></div>
+                            <div class="background-card bottom"></div>
+                        </div>
+                        <div class="swiper-slide-particles">
+                            <div class="swiper-slide-particles-wrapper">
+                                <img class="guse" src="img/actionslider/slide-6/guse.png" alt="#">
+                            </div>
+                        </div>
+                        <img class="particle seashell" src="img/actionslider/slide-6/seashell.png" alt="#">
+                        <img class="particle whale" src="img/actionslider/slide-6/whale.png" alt="#">
+                        <img class="particle moon" src="img/actionslider/slide-6/moon.png" alt="#">
+                    </div>
+                    <div class="swiper-slide-bg"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-1" data-swiper-autoplay="13000" data-nav-link="production">
+                    <video autoplay muted loop playsinline id="video-0" class="lazyload" poster="files/slidesVideo/production-poster.jpeg">
+                        <source data-src="files/slidesVideo/production.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide slide-2" data-swiper-autoplay="10000" data-nav-link="creative">
+                    <video muted loop playsinline id="video-1" class="lazyload" poster="files/slidesVideo/creative-poster.jpeg">
+                        <source data-src="files/slidesVideo/creative.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide slide-3" data-swiper-autoplay="13000" data-nav-link="digital">
+                    <video muted loop playsinline id="video-2" class="lazyload" poster="files/slidesVideo/digital-poster.jpeg">
+                        <source data-src="files/slidesVideo/digital.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide slide-4" data-swiper-autoplay="13000" data-nav-link="360">
+                    <video muted loop playsinline id="video-3" class="lazyload" poster="files/slidesVideo/360-poster.jpeg">
+                        <source data-src="files/slidesVideo/360.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide slide-5" data-swiper-autoplay="10000" data-nav-link="event">
+                    <video muted loop playsinline id="video-4" class="lazyload" poster="files/slidesVideo/event-poster.jpeg">
+                        <source data-src="files/slidesVideo/event.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide slide-6" data-swiper-autoplay="15000" data-nav-link="promotion">
+                    <video muted loop playsinline id="video-5" class="lazyload" poster="files/slidesVideo/promotion-poster.jpeg">
+                        <source data-src="files/slidesVideo/promotion.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide slide-7" data-swiper-autoplay="15000" data-nav-link="photography">
+                    <video muted loop playsinline id="video-6" class="lazyload" poster="files/slidesVideo/photography-poster.jpeg">
+                        <source data-src="files/slidesVideo/photography.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide slide-8" data-swiper-autoplay="14000" data-nav-link="web-design">
+                    <video muted loop playsinline id="video-7" class="lazyload" poster="files/slidesVideo/web-design-poster.jpeg">
+                        <source data-src="files/slidesVideo/web-design.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide slide-9" data-swiper-autoplay="13000" data-nav-link="advertising">
+                    <video muted loop playsinline id="video-8" class="lazyload" poster="files/slidesVideo/advertising-poster.jpeg">
+                        <source data-src="files/slidesVideo/advertising.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+            <div class="videos__nav main-container"></div>
+            
+        </section>
+
+        <section class="portfolio main-container">
+            <div class="portfolio__wrapper">
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div.png" alt="#">
+                    </a>
+                </div>
+                
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-1.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-2.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-3.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-4.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-5.png" alt="#">
+                    </a>
+                </div>
+                
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-6.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-7.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-8.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-9.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-10.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-11.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-12.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-13.png" alt="#">
+                    </a>
+                </div>
+
+                <div class="portfolio__card">
+                    <a href="#">
+                        <div class="portfolio__card-meta">
+                            <p>360</p>
+                            <h4>Airfrance</h4>
+                        </div>
+                        <img src="img/portfolioItems/div-14.png" alt="#">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-container">
+            <section class="ourclients swiper">
+                <h2>Наши клиенты</h2>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/clients/1.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/2.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/3.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/4.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/5.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/6.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/7.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/8.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/1.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/2.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/3.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/4.png" alt="#">
+                    </div>
+                </div>
+    
+                <div class="swiper-pagination"></div>
+            </section>
+        </div>
+
+        <section class="letstalk">
+    <div class="letstalk__wrapper main-container">
+        <div class="letstalk__form letstalk__card">
+            <div class="letstalk__form-image">
+                <img src="img/letstalk-form-img.png" alt="#">
+            </div>
+            <div class="letstalk__form-wrapper">
+                <h2>Пообщаемся?</h2>
+                <form class="letstalk__form-form" action="#">
+                    <input type="text" name="name" id="lt-name" required placeholder="Введите имя">
+                    <input type="email" name="email" id="lt-email" required placeholder="Введите email">
+                    <textarea name="message" id="lt-message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+                    <button type="submit">отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="letstalk__info moscow letstalk__card">
+            <h3>Москва</h3>
+            <ul>
+                <li>
+                    <img src="img/icons/icons.svg#location" class="svg-location-dims" alt="location">
+                    <p>Москва 2-й Павелецкий пр-д, 5, стр. 1, БЦ Ривердейл, офис 419</p>
+                </li>
+                <li>
+                    <img src="img/icons/icons.svg#phone" class="svg-phone-dims" alt="phone">
+                    <p><a href="tel:+74957409026">+7 (495) 740 90 26</a></p>
+                </li>
+                <li>
+                    <img src="img/icons/icons.svg#mail" class="svg-mail-dims" alt="mail">
+                    <p><a href="mailto:info@gnezdo-pro.tv">info@gnezdo-pro.tv</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="letstalk__info istanbul letstalk__card">
+            <h3>Istanbul</h3>
+            <ul>
+                <li>
+                    <img src="img/icons/icons.svg#location" class="svg-location-dims" alt="location">
+                    <p>Esentepe Mah, Keskin Kalem Sokağı NO:17/2, 34394 İstanbul</p>
+                </li>
+                <li>
+                    <img src="img/icons/icons.svg#phone" class="svg-phone-dims" alt="phone">
+                    <p><a href="tel:+79262197717">+7 (926) 219 77 17</a></p>
+                </li>
+                <li>
+                    <img src="img/icons/icons.svg#mail" class="svg-mail-dims" alt="mail">
+                    <p><a href="mailto:info@gnezdo-pro.tv">info@gnezdo-pro.tv</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="main-container">
+        <div class="footer__wrapper">
+            <p class="copy">2015 - 2022 GNEZDO AGENCY</p>
+            <p class="politics">Политика конфиденциальности</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script defer src="js/app.min.js"></script>
+</body>
+</html>
