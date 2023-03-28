@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {'title': 'Quick-Step'})
+<body>
+    
+    @@include('html/menu-header.html', {})
+
+    <main>
+        <div class="main-container">
+            <section class="detailed">
+                <div class="detailed__template">
+                    <img src="@img/detailed/aliexpress.png" alt="#">
+                </div>
+                <div class="detailed__info">
+                    <h1>Quick-Step</h1>
+                    <div class="detailed__meta">
+                        <p><span>ÜRETİCİ</span>Unilin</p>
+                        <p><span>KATEGORİ</span>Üretme</p>
+                    </div>
+                    <p class="detailed__description">Quick - Step'in tarihi 1960 yılında başlar. Bugün çok çeşitli dayanıklı laminat ve vinil zeminler sunuyorlar. Yenilikçi çözümleri ve teknolojileri cesurca uygularlar. Bu nedenle ürünleri, çekici tasarım, su geçirmezlik ve kurulum kolaylığı gibi niteliklerle ünlüdür.</p>
+                    <div class="detailed__about">
+                        <h3>PROJE HAKKINDA:</h3>
+                        <p>Yaratıcı bir grafik reklam konsepti oluşturuldu . Renkli ve canlı metaforlarla izleyiciyi muhteşemlik, güzellik ve stil atmosferine sokmaya çalıştık. Video, eskiz tarzında pudralı düzgün tonlar kullandı.</p>
+                    </div>
+                    <div class="detailed__particles">
+                        <img src="@img/detailed/aliexpress-absolute-image.png" alt="#">
+                    </div>
+                </div>
+                <div style="display: none;" class="detailed__buttons">
+                    <button class="detailed__buttons-prev">BEFORE</button>
+                    <button class="detailed__buttons-next">NEXT</button>
+                </div>
+            </section>
+        </div>
+
+        @@include('html/form.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+</body>
+</html>

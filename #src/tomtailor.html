@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {'title': 'TOM TAILOR'})
+<body>
+    
+    @@include('html/menu-header.html', {})
+
+    <main>
+        <div class="main-container">
+            <section class="detailed">
+                <div class="detailed__template">
+                    <img src="@img/detailed/aliexpress.png" alt="#">
+                </div>
+                <div class="detailed__info">
+                    <h1>TOM TAILOR</h1>
+                    <div class="detailed__meta">
+                        <p><span>MARKA</span>Tom Tailor</p>
+                        <p><span>KATEGORİ</span>Üretme</p>
+                    </div>
+                    <p class="detailed__description">Tom Tailor , 1962'de kurulmuş, Hamburg'da büyümüş ve yerleşik bir gündelik giyim markasıdır. Uwe Schröder'in modern imaj ve yüksek kaliteli ürünler konsepti şirketi bugüne kadar yönlendirmiştir.</p>
+                    <div class="detailed__about">
+                        <h3>PROJE HAKKINDA:</h3>
+                        <p>Video, markanın misyonunu görselleştiriyor: dünyayı biraz daha iyi hale getirmek ve Tom stili sevenlere bir fırsat vermek Hayatın zevkini hissedin terzi . Bu video gibi markanın kıyafetleri genç kalplere, pozitif ve özgür insanlara hitap edecek.</p>
+                    </div>
+                    <div class="detailed__particles">
+                        <img src="@img/detailed/aliexpress-absolute-image.png" alt="#">
+                    </div>
+                </div>
+                <div style="display: none;" class="detailed__buttons">
+                    <button class="detailed__buttons-prev">BEFORE</button>
+                    <button class="detailed__buttons-next">NEXT</button>
+                </div>
+            </section>
+        </div>
+
+        @@include('html/form.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+</body>
+</html>

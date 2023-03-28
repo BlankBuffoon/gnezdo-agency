@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {'title': 'Jack Daniels'})
+<body>
+    
+    @@include('html/menu-header.html', {})
+
+    <main>
+        <div class="main-container">
+            <section class="detailed">
+                <div class="detailed__template">
+                    <img src="@img/detailed/aliexpress.png" alt="#">
+                </div>
+                <div class="detailed__info">
+                    <h1>Jack Daniels</h1>
+                    <div class="detailed__meta">
+                        <p><span>ÜRETİCİ</span>Jack Daniels</p>
+                        <p><span>KATEGORİ</span>Üretme</p>
+                    </div>
+                    <p class="detailed__description">Jack Daniels, ABD'den dünyaca ünlü bir viski markasıdır ve yılda 6 milyondan fazla şişe satmaktadır.</p>
+                    <div class="detailed__about">
+                        <h3>PROJE HAKKINDA:</h3>
+                        <p>İşbirliğimizin bir parçası olarak bir dizi hizmet gerçekleştirdik: Bir dizi reçete silindirinin çıkarılması; üretilen reklamları kullanarak internette bir reklam kampanyası yürütmek.</p>
+                    </div>
+                    <div class="detailed__particles">
+                        <img src="@img/detailed/aliexpress-absolute-image.png" alt="#">
+                    </div>
+                </div>
+                <div style="display: none;" class="detailed__buttons">
+                    <button class="detailed__buttons-prev">BEFORE</button>
+                    <button class="detailed__buttons-next">NEXT</button>
+                </div>
+            </section>
+        </div>
+
+        @@include('html/form.html')
+
+    </main>
+
+    @@include('html/footer.html')
+
+</body>
+</html>
