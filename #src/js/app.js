@@ -262,6 +262,14 @@ $(function() {
         $(this).find('img.open').toggleClass('active');
         $(this).find('img.close').toggleClass('active');
     })
+
+    $('.header').on('click', '.header__burger ul li', function() {
+        $(this).closest('.header').find('.header__burger').toggleClass('active');
+        $(this).closest('.header').find('.header__nav').toggleClass('active');
+        $(this).closest('.header').find('.header__content').toggleClass('hidden');
+        $(this).closest('.header').find('img.open').toggleClass('active');
+        $(this).closest('.header').find('img.close').toggleClass('active');
+    })
 })
 
 // Кнопки вызова формы
