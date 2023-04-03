@@ -3,6 +3,7 @@ import * as appFunc from "./modules/isWebp.js";
 import * as jQueryInputMask from "./modules/jquery.inputmask.min.js";
 import * as jQueryMarquee from "./modules/jquery.marquee.min.js"
 import * as actionAnimations from "./modules/actionAnimations.js";
+import * as detailedAnimations from "./modules/detailedAnimations.js";
 
 // JQ
 jQueryFunc.jQuery();
@@ -18,6 +19,7 @@ jQueryMarquee.jQueryMarquee();
 
 // Анимации
 actionAnimations.atcionAnims();
+detailedAnimations.detailedAnims();
 
 
 
@@ -44,6 +46,17 @@ $(function() {
     const actionSlider = new Swiper('.action', {
         loop: true,
         shortSwipes: true,
+
+        effect: "creative",
+        creativeEffect: {
+            prev: {
+            shadow: true,
+            translate: ["-20%", 0, -1],
+            },
+            next: {
+            translate: ["100%", 0, 0],
+            },
+        },
 
         autoplay: {
             delay: 6000,
@@ -192,6 +205,7 @@ $(function () {
     const feedbackSlider = new Swiper('.feedback__swiper', {
         loop: true,
         shortSwipes: true,
+        speed: 2000,
 
         pagination: {
             el: ".swiper-pagination",
@@ -242,7 +256,7 @@ $(function() {
             direction: "left",
             startVisible: true,
             delayBeforeStart: 0,
-            speed: 20,
+            speed: 60,
         });
     }, function() {
         $(this).find('a.menu-item').removeClass('hover');
@@ -293,3 +307,87 @@ $(function() {
         $(this).find('.hidden').fadeOut(500);
     })
 })
+
+
+// Печатающийся текст на главной
+
+$(function() {
+    if ($('.header__heading').length) {
+        const words = ["Международное маркетинговое агентство"];
+        let i = 0;
+        let counter;
+        function typeNow(){
+            let word = words[i].split("");
+            const loopTyping = function() {
+                if (word.length > 0) {
+                    document.getElementById('header-heading').innerHTML += word.shift();
+                } else {
+                    setTimeout(deleteNow, 1000);
+                    // deleteNow();
+                    return false;
+                };
+                counter = setTimeout(loopTyping, 60);
+            };
+            loopTyping();
+        };
+        function deleteNow() {
+            let word = words[i].split("");
+            const loopDeleting = function() {
+                if (word.length > 0) {
+                    word.pop();
+                    document.getElementById('header-heading').innerHTML = word.join("");
+                } else {
+                    if (words.length > (i + 1)) {
+                        i++;
+                    }
+                    else {
+                        i = 0;
+                    };
+                    setTimeout(typeNow, 1000);
+                    return false;
+                };
+                counter = setTimeout(loopDeleting, 80);
+            };
+            loopDeleting();
+        };
+        typeNow();
+    }
+})
+
+
+// Появление карточек на второй странице
+
+if ($('introdusing__cards').length) {
+    $(window).on('scroll', function() {
+        var scrollTop = $(this).scrollTop();
+        var elementOffset = $('.introdusing__cards').offset().top;
+        var distance = (elementOffset - scrollTop);
+        var windowHeight = $(window).height();
+        var breakpoint = windowHeight - 50;
+        if (distance < breakpoint) {
+            $('.introdusing__cards').css({
+                'opacity': 1
+            });
+        }
+    });
+}
+
+// Появление карточек на первой странице (проекты)
+
+if ($('.portfolio__card').length) {
+    $(window).on('scroll', function() {
+        var scrollTop = $(this).scrollTop();
+        $('.portfolio__card').each(function() {
+            var elementOffset = $(this).offset().top;
+            var distance = (elementOffset - scrollTop);
+            var windowHeight = $(window).height();
+            var breakpoint = windowHeight - 100;
+            if (distance < breakpoint) {
+                console.log('adsasdads')
+                $(this).find('img').css({
+                    'transform': 'scale(1)'
+                });
+            }
+        })
+    });
+}

@@ -241,9 +241,18 @@ button {
                 align-items: center;
                 margin-right: 34px;
 
-                button:not(:last-child) {
-                    margin-right: 15px;
+                button {
+                    transition: all .8s;
+                    &:hover {
+                        transform: scale(1.05);
+                        // padding: 14px 64px;
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 15px;
+                    }
                 }
+                
             }
 
             .header__nav--btns {
@@ -295,12 +304,16 @@ button {
 
     &__content {
         display: flex;
+        height: calc(100vh - 230px);
+        align-items: end;
 
         &.hidden {
             display: none;
         }
 
         &--card {
+            width: 770px;
+            height: 277px;
             padding: 30px 160px 48px 70px;
             
             position: relative;
@@ -462,7 +475,7 @@ button {
 }
 
 .action {
-    height: 825px;
+    height: 100vh;
 
     .swiper {
         &-slide {
@@ -692,7 +705,7 @@ button {
 
 .videos {
     position: relative;
-    height: 768px;
+    height: 100vh;
 
     &__nav {
         overflow: hidden;
@@ -782,6 +795,7 @@ button {
     margin-top: 60px;
     margin-bottom: 60px;
 
+    z-index: 10;
 
     &__wrapper {
         display: grid;
@@ -808,6 +822,8 @@ button {
                 height: 100%;
 
                 transition: all .5s;
+
+                transform: scale(1.1);
             }
         }
 
@@ -975,6 +991,13 @@ button {
                     font-size: 14px;
                     line-height: 136%;
                 }
+
+                transition: all .3s;
+
+                &:hover {
+                    transform: scale(1.01);
+                    border: 2px solid #FFE08E;
+                }
             }
 
             textarea {
@@ -997,6 +1020,11 @@ button {
                 margin-left: 20px;
 
                 text-transform: uppercase;
+                transition: all .5s;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
         }
     }
@@ -1036,6 +1064,18 @@ button {
                     font-size: 16px;
                     line-height: 136%;
                     color: #5C5C5C;
+
+                    width: fit-content;
+
+                    transition: font-weight .3s;
+                    transition: letter-spacing .5s;
+                }
+
+                &.clickable {
+                    p:hover, p:hover a {
+                        font-weight: bold;
+                        letter-spacing: -.2px;
+                    }
                 }
 
                 img {
@@ -1199,6 +1239,9 @@ button {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 550px;
         gap: 78px;
+
+        opacity: 0;
+        transition: opacity 1s;
     }
 
     &__card {
@@ -1208,6 +1251,9 @@ button {
 
         &.card1 {
             .introdusing__card-background {
+
+                transition: transform .5s;
+
                 &.top {
                     background: #35A7FF;
                     transform: rotate(-1.58deg);
@@ -1218,10 +1264,25 @@ button {
                     transform: rotate(0.46deg);
                 }
             }
+
+            &:hover {
+                .introdusing__card-background {
+                    &.top {
+                        transform: rotate(-4.34deg);
+                    }
+    
+                    &.bottom {
+                        transform: rotate(2.77deg);
+                    }
+                }
+            }
         }
 
         &.card2 {
             .introdusing__card-background {
+                
+                transition: transform .5s;
+                
                 &.top {
                     background: #FFDE84;
                     transform: rotate(4.09deg);
@@ -1230,6 +1291,18 @@ button {
                 &.bottom {
                     background: #FF9110;
                     transform: rotate(2.72deg);
+                }
+            }
+
+            &:hover {
+                .introdusing__card-background {
+                    &.top {
+                        transform: rotate(6.71deg);
+                    }
+    
+                    &.bottom {
+                        transform: rotate(0.75deg);
+                    }
                 }
             }
         }
@@ -1504,17 +1577,43 @@ button {
     position: relative;
 
     &__template {
-        // flex: .8;
         width: 50%;
         height: 100%;
-        // max-width: 750px;
-        // height: fit-content;
+        position: relative;
+
+        z-index: 5;
 
         img {
             width: 100%;
             height: 100%;
             border-radius: 8px;
-            box-shadow: 9px 9px 0px #FFBE0B;
+
+            transition: all .5s;
+
+        }
+    
+        &--bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+
+            top: 5px;
+            left: 9px;
+            background-color: #FFBE0B;
+            border-radius: 8px;
+            z-index: -1;
+
+            transition: all .5s;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.02);
+            }
+
+            .detailed__template--bg {
+                transform: rotate(-3.9deg);
+            }
         }
     }
 
@@ -1628,6 +1727,12 @@ button {
             line-height: 141%;
 
             text-shadow: 0.933828px 0.933828px 0px rgba(255, 255, 255, 0.65);
+
+            transition: all .5s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
 
         &-prev {
