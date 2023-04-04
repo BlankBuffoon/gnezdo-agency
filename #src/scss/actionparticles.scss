@@ -28,49 +28,49 @@
             position: absolute;
 
             &.flower {
-                top: 25px;
+                top: 10px;
                 left: -60px;
                 z-index: -3;
             }
 
             &.rainbow {
-                top: 0;
+                top: -10px;
                 right: 0;
             }
             
             &.lightning {
-                top: 17%;
+                top: 12%;
                 left: 54%;
             }
 
-            &.tape {
-                bottom: 17%;
-                left: 55%;
-            }
-
             &.mouth-s3 {
-                top: 17%;
+                width: 240px;
+                top: 13%;
                 left: 50%;
             }
 
             &.plane {
+                width: 200px;
                 left: 0;
                 bottom: 12%;
+                transform: rotate(-11.5deg);
             }
 
             &.seashell {
-                top: 15%;
-                left: 54%;
+                top: 6%;
+                left: 52%;
             }
 
             &.whale {
-                bottom: 22%;
+                width: 430px;
+                bottom: 20%;
                 left: 34%;
             }
 
             &.moon {
-                top: -20px;
-                left: -60px;
+                width: 300px;
+                top: -75px;
+                left: -90px;
                 z-index: -3;
             }
         }
@@ -91,7 +91,7 @@
     
                     &.glasses {
                         z-index: 12;
-                        top: -300px;
+                        top: -320px;
                     }
                 }
             }
@@ -101,9 +101,17 @@
             .swiper-slide-particles {
                 img {
                     &.cat {
+                        width: 330px;
                         z-index: 10;
-                        top: -320px;
-                        right: -290px;
+                        top: -260px;
+                        right: -250px;
+                    }
+                    
+                    &.ufo {
+                        width: 340px;
+                        z-index: 9;
+                        top: -360px;
+                        right: -240px;
                     }
                 }
             }
@@ -115,7 +123,7 @@
                     &.flamingo {
                         z-index: 10;
                         top: -260px;
-                        right: -330px;
+                        right: -360px;
                     }
                 }
             }
@@ -125,10 +133,16 @@
             .swiper-slide-particles {
                 img {
                     &.phone {
+                        width: 450px;
+                        z-index: 10;
+                        bottom: -220px;
+                        left: 0;
+                    }
+                    &.hand {
                         width: 650px;
                         z-index: 10;
-                        top: -199px;
-                        right: -375px;
+                        top: -220px;
+                        right: -220px;
                     }
                 }
             }
@@ -137,10 +151,18 @@
         &.slide-5 {
             .swiper-slide-particles {
                 img {
-                    &.babyandhand {
+                    &.baby {
                         z-index: 10;
+                        width: 580px;
                         top: -260px;
                         right: -330px;
+                    }
+                    
+                    &.hand-s5 {
+                        z-index: 10;
+                        width: 480px;
+                        top: -320px;
+                        right: -140px;
                     }
                 }
             }
@@ -151,7 +173,8 @@
                 img {
                     &.guse {
                         z-index: 10;
-                        top: -260px;
+                        width: 400px;
+                        top: -300px;
                         right: -330px;
                     }
                 }
@@ -160,135 +183,132 @@
     }
 }
 
+@media (max-width: 1750px) {
+
+    .action .swiper {
+        &-slide {
+            &.slide-4 {
+                .swiper-slide-particles {
+                    img {
+                        &.phone {
+                            width: 360px;
+                            z-index: 10;
+                            bottom: -220px;
+                            left: 40px;
+                        }
+                        &.hand {
+                            width: 500px;
+                            z-index: 10;
+                            top: -150px;
+                            right: -200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
 @media (max-width: 1440px) {
     .action .swiper {
         &-slide {
             &-wrapper {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                
                 .particle {
-                    height: auto;
-
-                    &.flower {
-                        width: 250px;
-                    }
-                    
-                    &.rainbow {
-                        width: 150px;
-                    }
-                    
-                    &.lightning {
-                        width: 90px;
-                        top: 2%;
-                        left: 55%;
-                    }
-
-                    &.tape {
-                        left: 57%;
-                    }
-
-                    &.mouth-s3 {
-                        width: 200px;
-                        top: 10%;
-                    }
-
-                    &.plane {
-                        bottom: 10%;
-                    }
-
-                    &.moon {
-                        width: 250px;
-                    }
-
-                    &.whale {
-                        width: 300px;
-                        bottom: 15%;
-                        left: 40%;
-                    }
-
-                    &.seashell {
-                        width: 130px;
-                        top: 13%;
-                    }
+                    display: none;
                 }
+            }
+
+            &-particles {
+                display: none;
+            }
+
+            &-bg {
+                background-size: cover;
+                background-position: center center;
             }
         }
     }
 }
 
 
-@media (max-width: 1320px) {
-    .action .swiper {
-        &-slide {
-            &-wrapper {
-                .particle {
-                    height: auto;
-
-                    &.tape {
-                        display: none;
-                    }
-
-                    &.mouth-s3 {
-                        display: none;
-                    }
-                }
-            }
-            
-            .swiper-slide-particles {
-                &-wrapper {
-                    transform: scale(.6);
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 1180px) {
-    .action .swiper {
-        &-slide {
-            &-wrapper {
-                .particle {
-                    &.lightning {
-                        display: none;
-                    }
-
-                    &.plane {
-                        display: none;
-                    }
-
-                    &.moon {
-                        width: 170px;
-                    }
-
-                    &.seashell {
-                        display: none;
-                    }
-
-                    &.whale {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 1000px) {
-    .action .swiper {
-        &-slide {
-            .swiper-slide-particles {
-                &-wrapper {
-                    transform: scale(.5) translateX(0px) translateY(100px);
-                }
-            }
-        }
-    }
-}
-
-// @media (max-width: 890px) {
+// @media (max-width: 1320px) {
 //     .action .swiper {
 //         &-slide {
-//             &-particles {
-//                 display: none;
+//             &-wrapper {
+//                 .particle {
+//                     height: auto;
+
+//                     &.tape {
+//                         display: none;
+//                     }
+
+//                     &.mouth-s3 {
+//                         display: none;
+//                     }
+//                 }
+//             }
+            
+//             .swiper-slide-particles {
+//                 &-wrapper {
+//                     transform: scale(.6);
+//                 }
 //             }
 //         }
 //     }
 // }
+
+// @media (max-width: 1180px) {
+//     .action .swiper {
+//         &-slide {
+//             &-wrapper {
+//                 .particle {
+//                     &.lightning {
+//                         display: none;
+//                     }
+
+//                     &.plane {
+//                         display: none;
+//                     }
+
+//                     &.moon {
+//                         width: 170px;
+//                     }
+
+//                     &.seashell {
+//                         display: none;
+//                     }
+
+//                     &.whale {
+//                         display: none;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 1000px) {
+//     .action .swiper {
+//         &-slide {
+//             .swiper-slide-particles {
+//                 &-wrapper {
+//                     transform: scale(.5) translateX(0px) translateY(100px);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// // @media (max-width: 890px) {
+// //     .action .swiper {
+// //         &-slide {
+// //             &-particles {
+// //                 display: none;
+// //             }
+// //         }
+// //     }
+// // }

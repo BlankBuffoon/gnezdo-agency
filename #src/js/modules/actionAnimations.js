@@ -8,90 +8,57 @@ export function atcionAnims() {
         targets: '.action.swiper .swiper-slide-particles img.glasses',
         loop: true,
         keyframes: [
-            {translateY: '5'},
-            {rotate: '5deg'},
-            {rotate: '3deg'},
-            {rotate: '-1deg'},
-            {translateY: '-4'},
-            {rotate: '2deg'},
-            {rotate: '7deg'},
-            {rotate: '4deg'},
+            {rotate: '-20deg'},
             {rotate: '0deg'},
         ],
-        duration: 3500
+        duration: 1800,
+        easing: "easeInOutCubic",
     });
     
     anime({
         targets: '.action.swiper .swiper-slide-particles img.mouth',
         loop: true,
         keyframes: [
-            {rotate: '12deg'},
-            {rotate: '-1deg'},
-            {translateY: '5'},
-            {rotate: '3deg'},
-            {translateY: '-4'},
-            {rotate: '2deg'},
-            {rotate: '7deg'},
-            {rotate: '0deg'},
-            {rotate: '4deg'},
-        ],
-        duration: 4000
-    });
-    
-    anime({
-        targets: '.action.swiper .swiper-slide-particles img.chair',
-        loop: true,
-        keyframes: [
-            {translateY: '5'},
-            {rotate: '5deg'},
-            {rotate: '-1deg'},
-            {rotate: '4deg'},
-            {rotate: '8deg'},
-            {rotate: '0deg'},
-            {rotate: '-8deg'},
-            {translateY: '-4'},
+            {rotate: '-20deg'},
             {rotate: '0deg'},
         ],
-        duration: 4500
+        duration: 1800,
+        easing: "easeInOutCubic",
     });
 
     anime({
         targets: '.action.swiper .swiper-wrapper .particle.flower',
         loop: true,
         keyframes: [
-            {translateY: '0'},
-            {translateY: '8'},
-            {translateY: '15'},
-            {translateY: '8'},
-            {translateY: '0'},
+            {rotate: '360deg'},
+            {rotate: '0deg'},
         ],
-        duration: 1300
+        duration: 20000,
+        easing: "linear",
     });
 
     anime({
         targets: '.action.swiper .swiper-wrapper .particle.rainbow',
         loop: true,
         keyframes: [
-            {rotate: '0deg'},
-            {rotate: '2deg'},
             {rotate: '5deg'},
-            {rotate: '3deg'},
+            {rotate: '0deg'},
+            {rotate: '-5deg'},
             {rotate: '0deg'},
         ],
-        duration: 1000
+        duration: 2000,
+        easing: "linear",
     });
 
     anime({
         targets: '.action.swiper .swiper-wrapper .particle.lightning',
         loop: true,
         keyframes: [
-            {translateY: '0', rotate: "0deg"},
-            {translateY: '11', rotate: "1deg"},
-            {translateY: '33', rotate: "3deg"},
-            {translateY: '8', rotate: "1deg"},
+            {translateY: '60', rotate: "-24deg"},
             {translateY: '0', rotate: "0deg"},
         ],
-        duration: 2000
+        duration: 1200,
+        easing: "easeInBack",
     });
 
     // Slide 2
@@ -100,27 +67,22 @@ export function atcionAnims() {
         targets: '.action.swiper .swiper-slide-particles img.cat',
         loop: true,
         keyframes: [
-            {translateY: '5'},
-            {rotate: '2deg'},
-            {rotate: '-1deg'},
-            {rotate: '3deg'},
-            {rotate: '5deg'},
-            {rotate: '0deg'},
-            {rotate: '-3deg'},
-            {translateY: '-4'},
-            {rotate: '0deg'},
+            {rotate: '-7.2deg', translateX: -20},
+            {rotate: '0deg', translateX: 0},
         ],
-        duration: 4500
+        duration: 1500,
+        easing: "easeInOutCubic",
     });
 
     anime({
-        targets: '.action.swiper .swiper-wrapper .particle.tape',
+        targets: '.action.swiper .swiper-slide-particles img.ufo',
         loop: true,
         keyframes: [
-            {rotate: '2deg'},
-            {rotate: '-3deg'},
+            {rotate: '-5.3deg', scale: '1.2'},
+            {rotate: '0deg', scale: '1'},
         ],
-        duration: 1000
+        duration: 1500,
+        easing: "easeInOutCubic",
     });
 
     // Slide 3
@@ -129,63 +91,83 @@ export function atcionAnims() {
         targets: '.action.swiper .swiper-slide-particles img.flamingo',
         loop: true,
         keyframes: [
-            {rotate: '0deg'},
-            {rotate: '5deg'},
-            {rotate: '-1deg'},
-            {translateY: '5'},
-            {translateY: '-4'},
-            {rotate: '3deg'},
-            {rotate: '0deg'},
-            {rotate: '2deg'},
-            {rotate: '-3deg'},
+            {rotate: '-7.1deg', right: '-170px'},
+            {rotate: '0deg',  right: '-360px'},
         ],
-        duration: 4500
+        duration: 2000,
+        easing: "easeInOutCubic",
     });
 
     anime({
         targets: '.action.swiper .swiper-wrapper .particle.mouth-s3',
         loop: true,
         keyframes: [
-            {translateY: '0', rotate: "0deg"},
-            {translateY: '10', rotate: "8deg"},
-            {translateY: '30', rotate: "15deg"},
-            {translateY: '10', rotate: "8deg"},
+            {translateY: '10', rotate: "-9deg"},
             {translateY: '0', rotate: "0deg"},
         ],
-        duration: 2000
+        duration: 2000,
+        easing: "easeInOutCubic",
     });
     
     anime({
         targets: '.action.swiper .swiper-wrapper .particle.plane',
         loop: true,
         keyframes: [
-            {translateX: '100'},
-            {rotate: '-3deg'},
-            {translateX: '200'},
-            {rotate: '10deg'},
-            {translateX: '400'},
-            {rotate: '4deg'},
-            {translateX: '600'},
-            {rotate: '-1deg'},
-            {translateX: '400'},
-            {rotate: '4deg'},
-            {translateX: '200'},
-            {rotate: '10deg'},
-            {translateX: '100'},
-            {rotate: '-3deg'},
-            {translateX: '0'},
-            {rotate: '0deg'},
+            {translateX: '700', rotate: '12.1deg'},
+            {translateX: '0', rotate: '-11.5deg'},
+            {translateX: '0', rotate: '0deg'},
         ],
-        duration: 7000
+        duration: 4000,
+        easing: "easeInOutCubic",
     });
 
     // Slide 4
 
-    // ...
+    anime({
+        targets: '.action.swiper .swiper-wrapper .particle.phone',
+        loop: true,
+        keyframes: [
+            {translateX: 5, rotate: '-9.5deg'},
+            {translateX: 0, rotate: '0deg'},
+        ],
+        duration: 850,
+        easing: "easeOutCubic",
+    });
+    
+    anime({
+        targets: '.action.swiper .swiper-wrapper .particle.hand',
+        loop: true,
+        keyframes: [
+            {translateX: 10, rotate: '-10.5deg'},
+            {translateX: 0, rotate: '0deg'},
+        ],
+        duration: 2000,
+        easing: "easeInOutCubic",
+    });
 
     // Slide 5
 
-    // ...
+    anime({
+        targets: '.action.swiper .swiper-wrapper .particle.baby',
+        loop: true,
+        keyframes: [
+            {rotate: '1deg'},
+            {rotate: '0deg'},
+        ],
+        duration: 2300,
+        easing: "easeInOutCubic",
+    });
+    
+    anime({
+        targets: '.action.swiper .swiper-wrapper .particle.hand-s5',
+        loop: true,
+        keyframes: [
+            {translateY: 15, rotate: '7.5deg'},
+            {translateY: 0, rotate: '0deg'},
+        ],
+        duration: 1500,
+        easing: "easeInOutCubic",
+    });
 
     // Slide 6
 
@@ -193,55 +175,43 @@ export function atcionAnims() {
         targets: '.action.swiper .swiper-slide-particles img.guse',
         loop: true,
         keyframes: [
-            {rotate: '-1deg'},
-            {translateY: '5'},
-            {translateY: '-4'},
-            {rotate: '-3deg'},
-            {rotate: '0deg'},
-            {rotate: '3deg'},
-            {rotate: '2deg'},
-            {rotate: '0deg'},
-            {rotate: '5deg'},
+            {translateX: 10, rotate: '5.7deg'},
+            {translateX: 0, rotate: '0deg'},
         ],
-        duration: 4500
+        duration: 3100,
+        easing: "easeInOutCubic",
     });
 
     anime({
         targets: '.action.swiper .swiper-wrapper .particle.seashell',
         loop: true,
         keyframes: [
-            {rotate: "0deg"},
-            {rotate: "3deg"},
-            {rotate: "5deg"},
-            {rotate: "3deg"},
-            {rotate: "0deg"},
+            {translateX: 180, rotate: "50deg"},
+            {translateX: 0, rotate: "0deg"},
         ],
-        duration: 1500
+        duration: 2000,
+        easing: "easeInOutCubic",
     });
     
     anime({
         targets: '.action.swiper .swiper-wrapper .particle.moon',
         loop: true,
         keyframes: [
-            {rotate: "0deg"},
-            {rotate: "-3deg"},
-            {rotate: "-5deg"},
-            {rotate: "-3deg"},
+            {rotate: "360deg"},
             {rotate: "0deg"},
         ],
-        duration: 1300
+        duration: 25000,
+        easing: "linear",
     });
     
     anime({
         targets: '.action.swiper .swiper-wrapper .particle.whale',
         loop: true,
         keyframes: [
-            {rotate: "0deg"},
-            {rotate: "-2deg"},
-            {rotate: "-8deg"},
-            {rotate: "-2deg"},
-            {rotate: "0deg"},
+            {translateY: 15, translateX: 20, rotate: "-4deg"},
+            {translateY: 0, translateX: 0, rotate: "0deg"},
         ],
-        duration: 1700
+        duration: 1700,
+        easing: "easeInOutCubic",
     });
 }

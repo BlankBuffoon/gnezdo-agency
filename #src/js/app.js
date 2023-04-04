@@ -4,6 +4,7 @@ import * as jQueryInputMask from "./modules/jquery.inputmask.min.js";
 import * as jQueryMarquee from "./modules/jquery.marquee.min.js"
 import * as actionAnimations from "./modules/actionAnimations.js";
 import * as detailedAnimations from "./modules/detailedAnimations.js";
+import anime from "./animejs.js"
 
 // JQ
 jQueryFunc.jQuery();
@@ -312,7 +313,7 @@ $(function() {
 // Печатающийся текст на главной
 
 $(function() {
-    if ($('.header__heading').length) {
+    if ($('#header-heading').length) {
         const words = ["Международное маркетинговое агентство"];
         let i = 0;
         let counter;
@@ -391,3 +392,18 @@ if ($('.portfolio__card').length) {
         })
     });
 }
+
+// Анимация руки в форме
+
+$(function() {
+    anime({
+        targets: '.letstalk .letstalk__form-particle.hand',
+        loop: true,
+        keyframes: [
+            {translateX: -15, translateY: -50, rotate: '-24.7deg'},
+            {translateX: 0, translateY: 0, rotate: '0deg'},
+        ],
+        duration: 2000,
+        easing: "easeInOutCubic",
+    });
+})

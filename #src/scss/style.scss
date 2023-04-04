@@ -504,6 +504,16 @@ button {
 
                 padding: 58px 60px 58px 100px;
 
+                &:hover {
+                    h3 {
+                        transform: translateX(-20px);
+                    }
+                    
+                    a {
+                        transform: scale(1.05);
+                    }
+                }
+
                 h3 {
                     @include heading-light();
                     color: #FFFFFF;
@@ -511,16 +521,18 @@ button {
                     line-height: 136%;
                     position: relative;
 
-                    &::before {
-                        content: '';
-                        width: 30px;
-                        height: 10px;
-                        background: #FFFFFF;
-                        border-radius: 8px;
-                        position: absolute;
-                        top: 25px;
-                        left: -48px;
-                    }
+                    transition: all .5s;
+
+                    // &::before {
+                    //     content: '';
+                    //     width: 30px;
+                    //     height: 10px;
+                    //     background: #FFFFFF;
+                    //     border-radius: 8px;
+                    //     position: absolute;
+                    //     top: 25px;
+                    //     left: -48px;
+                    // }
                 }
 
                 a {
@@ -532,6 +544,8 @@ button {
                     border-radius: 8px;
 
                     text-transform: uppercase;
+
+                    transition: all .5s;
                 }
 
                 .background-card {
@@ -544,10 +558,12 @@ button {
 
                     &.top {
                         z-index: -1;
+                        transition: all .5s;
                     }
                     
                     &.bottom {
                         z-index: -2;
+                        transition: all .5s;
                     }
                 }
             }
@@ -583,6 +599,18 @@ button {
                             transform: rotate(-7.4deg);
                         }
                     }
+
+                    &:hover {
+                        .background-card {
+                            &.top {
+                                transform: rotate(-8.39deg);
+                            }
+
+                            &.bottom {
+                                transform: rotate(-5.07deg);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -606,6 +634,18 @@ button {
                         transform: rotate(0.88deg);
                     }
                 }
+
+                &:hover {
+                    .background-card {
+                        &.top {
+                            transform: rotate(5.39deg);
+                        }
+
+                        &.bottom {
+                            transform: rotate(-2.5deg);
+                        }
+                    }
+                }
             }
         }
 
@@ -627,6 +667,18 @@ button {
                     }
                 }
 
+                &:hover {
+                    .background-card {
+                        &.top {
+                            transform: rotate(-4.12deg);
+                        }
+
+                        &.bottom {
+                            transform: rotate(5.02deg);
+                        }
+                    }
+                }
+
                 img {
                     position: absolute;
                     bottom: -60px;
@@ -637,7 +689,7 @@ button {
 
         &-slide.slide-4 {
             & .swiper-slide-bg {
-                background-image: url(@img/actionslider/slide-4/slide-4-tmpbg.png);
+                background-image: url(@img/actionslider/slide-4/slide-4-bg.png);
             }
 
             & .content {
@@ -652,12 +704,24 @@ button {
                         transform: rotate(6.13deg);
                     }
                 }
+
+                &:hover {
+                    .background-card {
+                        &.top {
+                            transform: rotate(-1.12deg);
+                        }
+
+                        &.bottom {
+                            transform: rotate(10.02deg);
+                        }
+                    }
+                }
             }
         }
 
         &-slide.slide-5 {
             & .swiper-slide-bg {
-                background-image: url(@img/actionslider/slide-5/slide-5-tmpbg.png);
+                background-image: url(@img/actionslider/slide-5/slide-5-bg.png);
             }
 
             & .content {
@@ -670,6 +734,18 @@ button {
                     &.bottom {
                         background-color: #FFDE84;
                         transform: rotate(0.88deg);
+                    }
+                }
+
+                &:hover {
+                    .background-card {
+                        &.top {
+                            transform: rotate(-4.41deg);
+                        }
+
+                        &.bottom {
+                            transform: rotate(4.35deg);
+                        }
                     }
                 }
             }
@@ -690,6 +766,18 @@ button {
                     &.bottom {
                         background-color: #FFDE84;
                         transform: rotate(3.47deg);
+                    }
+                }
+
+                &:hover {
+                    .background-card {
+                        &.top {
+                            transform: rotate(3.9deg);
+                        }
+
+                        &.bottom {
+                            transform: rotate(-2.17deg);
+                        }
                     }
                 }
 
@@ -948,10 +1036,10 @@ button {
         grid-template-columns: 500px 1fr;
         grid-template-rows: 100%;
 
-        img {
-            width: 100%;
-            height: 100%;
-        }
+        // img.letstalk__form-particle.bg {
+        //     width: 100%;
+        //     height: 100%;
+        // }
 
         h2 {
             @include heading-light();
@@ -1025,6 +1113,34 @@ button {
                 &:hover {
                     transform: scale(1.05);
                 }
+            }
+        }
+
+        &-image {
+            position: relative;
+        }
+
+        &-particle {
+            position: absolute;
+
+            &.hand {
+                top: 40%;
+                right: 5%;
+                z-index: 2; 
+            }
+
+            &.phone {
+                top: 20%;
+                left: 20%;
+                z-index: 1;
+            }
+
+            &.bg {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
             }
         }
     }
